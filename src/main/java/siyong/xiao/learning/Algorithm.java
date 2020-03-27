@@ -10,6 +10,7 @@ import siyong.xiao.learning.other.SimpleGraph;
  **/
 public class Algorithm {
     public static void main(String[] args){
+
         SimpleGraph graph = new SimpleGraph(5);
         graph.addEdge(4,1);
         graph.addEdge(1,3);

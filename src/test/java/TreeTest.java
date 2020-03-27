@@ -26,8 +26,9 @@ public class TreeTest {
         root2.setRight(root5);
         root3.setLeft(root6);
         root3.setRight(root7);
-        List<List<String>> lists = Helper.bfs(root);
-        lists.forEach(
+       // List<List<String>> lists = Helper.bfs(root);
+        List<List<String>> lists2 = Helper.levelOrder(root);
+        lists2.forEach(
                 list->{
                     System.out.println(list.size());
                     StringBuilder sb = new StringBuilder();
@@ -37,7 +38,10 @@ public class TreeTest {
                            }
                    );
                    System.out.println(sb.substring(0,sb.length()-1));
+                   System.out.println();
                 }
         );
+
+
     }
 }

@@ -2,6 +2,8 @@ package siyong.xiao.learning;
 
 import siyong.xiao.learning.other.SimpleGraph;
 
+import java.util.Arrays;
+
 /**
  * @Description
  * @Author iss
@@ -30,5 +32,11 @@ public class Algorithm {
         bytes[0] |= 3;
         System.out.println(bytes[0]);
         System.out.println(1<<5);
+
+        int[] left = new int[5];
+        Arrays.fill(left, 5);
+
+        String str = "COUNT_%s";
+        System.out.println(String.format(str, null));
     }
 }

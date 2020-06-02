@@ -1,6 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 import siyong.xiao.learning.leetcode.MaximalRectangle;
+import siyong.xiao.learning.leetcode.SplitArray;
 
 /**
  * @Description
@@ -49,6 +50,18 @@ public class TestClass {
         System.out.println(MaximalRectangle.maximalRectangle3(a));
         Assert.assertEquals(6, MaximalRectangle.maximalRectangle3(a));
 
+    }
+
+    @Test
+    public void testSplitArray1() {
+        int[] a = {7, 2, 5, 10, 8};
+        Assert.assertEquals(18, SplitArray.splitArray1(a, 2));
+    }
+
+    @Test
+    public void testSplitArray2() {
+        int[] a = {7, 2, 5, 10, 8};
+        Assert.assertEquals(18, SplitArray.splitArray2(a, 2));
     }
 
 }
